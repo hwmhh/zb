@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="aa.css">
+<script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="jquery.SuperSlide.2.1.1.js"></script>
+<style type="text/css">
+.allbg-box{
+	position: relative;
+    padding-top: 82px;
+    max-height: 500px;
+    overflow: hidden;
+}
+.allbg-box .allbg{
+	background-image: url(bck.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.allbg-box .allbg .wordsbox{
+	position: absolute;
+    top: 50%;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 116px;
+    margin-top: -30px;
+    overflow: hidden
+}
+.yw{
+	color: #fff;
+	font-size: 24px;
+}
+.zw{
+	font-size: 42px;
+}
+.newsBox-upper .nebox .on {
+    color: #84c225;
+    font-size: 40px;
+    line-height: 50px;
+    height: 50px;
+    margin-top: 48px;
+}
+.hdhg-upper .nebox .data {
+	display: block;
+    float: left;
+}
+.hdhg-upper .nebox .search-box {
+    float: right;
+    margin-top: 50px;
+}
+.newsBox-upper .nebox {
+    position: relative;
+}
+.hdhg-upper .search-box form input[type="text"] {
+    border: none;
+    height: 36px;
+    width: 235px;
+    background-color: #eeeeee;
+    font-size: 14px;
+    text-indent: 15px;
+    float: left;
+}
+.hdhg-upper .search-box form input[type="submit"] {
+    width: 40px;
+    height: 36px;
+    background-color: #bcbcbc;
+    border: none;
+    float: right;
+    cursor: pointer;
+    background-image: url(icon25.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.himgbox{
+	margin-top: 67px;
+}
+.himgbox .himg li{
+	float: left;
+	margin-right: 16px;
+}
+.himgbox .himg .ximg{
+	position: relative;
+}
+.himgbox .himg li .huoimg{
+	width: 388px;
+	height: 241px;
+}
+.himgbox .himg .htime{
+	position: absolute;
+    left: 297px;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    width: 90px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    z-index: 1;
+}
+.himgbox .himg .bgco{
+	position: absolute;
+    left: 297px;
+    bottom: 0;
+    background-color: #000;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    width: 90px;
+    height: 25px;
+}
+.himgbox .himg .htit{
+	max-width: 388px;
+	font-size: 18px;
+	color: #000;
+}
+.himgbox .himg .hnei{
+	max-width: 388px;
+	font-size: 14px;
+	color: rgb(135,135,135);
+	margin-top: 26px;
+	margin-bottom: 30px;
+}
+.himgbox li:hover a .ximg .htime,.himg li:hover a .htit{
+	color: rgb(132,194,37);
+}
+.himgbox li{
+	border-bottom:4px solid #F2F2F2;
+}
+.himgbox li:hover{
+	border-bottom:4px solid #84c225;
+}
+.fenye{
+	margin-left: 600px;
+    margin-top: 65px;
+    margin-bottom: 130px;
+}
+.fenye .prev {
+	background: url(icon10.png) no-repeat;
+	width: 58px;
+	height: 30px;
+	cursor: pointer;
+}
+.fenye .next {
+	background: url(icon11.png) no-repeat;
+	width: 58px;
+	height: 30px;
+	cursor: pointer;
+}
+.fenye .active a {
+    color: #0067ac;
+    border-bottom: 2px solid #0067ac;
+}
+.fenye li{
+	display: inline-block;
+    width: 24px;
+    height: 30px;
+    text-align: center;
+    line-height: 28px;
+}
+</style>
+	<title>活动回顾</title>
+</head>
+<body>
+	<div class="header">
+		<div class="logo comWidth">
+			<a href="#" class="logo">
+				<img src="logo.png">
+			</a>
+			<ul id="nav" class="nav">
+				<li class="nLi">
+					<a href="index.html" class="a1">首页</a>
+				</li>
+				<li class="nLi">
+					<a href="" class="a1">关于我们</a>
+					<ul class="sub" style="display:none;">
+						<li>
+							<a href="#" class="a2">公司简介</a>
+						</li>
+						<li>
+							<a href="#" class="a2">团队介绍</a>
+						</li>
+						<li>
+							<a href="#" class="a2">企业文化</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nLi">
+					<a href="" class="a1">产品和服务</a>
+					<ul class="sub" style="display:none;">
+						<li>
+							<a href="" class="a2">充电桩</a>
+						</li>
+						<li>
+							<a href="" class="a2">充电站规划设计</a>
+						</li>
+						<li>
+							<a href="" class="a2">充电站运营管理</a>
+						</li>
+						<li>
+							<a href="" class="a2">充电站工程建设</a>
+						</li>
+						<li>
+							<a href="" class="a2">充电设施维护</a>
+						</li>
+						<li>
+							<a href="" class="a2">服务网点</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nLi">
+					<a href="" class="a1">商务合作</a>
+					<ul class="sub" style="display:none;">
+						<li>
+							<a href="" class="a2">新能源车里租赁/销售</a>
+						</li>
+						<li>
+							<a href="" class="a2">充电桩建设维护</a>
+						</li>
+						<li>
+							<a href="" class="a2">充电桩安装技能培训</a>
+						</li>
+						<li>
+							<a href="" class="a2">绿色出行活动策划</a>
+						</li>
+						<li>
+							<a href="" class="a2">商户联盟合作</a>
+						</li>
+						<li>
+							<a href="" class="a2">东莞充电站地图</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nLi">
+					<a href="" class="a1">企业会员</a>
+					<ul class="sub" style="display:none;">
+						<li>
+							<a href="vipz.html" class="a2">会员注册</a>
+						</li>
+						<li>
+							<a href="login.html" class="a2">会员登录</a>
+						</li>
+						<li>
+							<a href="huodong.html" class="a2">活动回顾</a>
+						</li>
+						<li>
+							<a href="fuwu.html" class="a2">服务支持</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nLi">
+					<a href="" class="a1">新闻资讯</a>
+					<ul class="sub" style="display:none;">
+						<li>
+							<a href="" class="a2">公司新闻</a>
+						</li>
+						<li>
+							<a href="" class="a2">政策法规</a>
+						</li>
+						<li>
+							<a href="" class="a2">行业资讯</a>
+						</li>
+						<li>
+							<a href="" class="a2">视频中心</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nLi">
+					<a href="" class="a1">联系我们</a>
+					<ul class="sub" style="display:none;">
+						<li>
+							<a href="" class="a2">联系方式</a>
+						</li>
+						<li>
+							<a href="" class="a2">在线留言</a>
+						</li>
+						<li>
+							<a href="" class="a2">人才招聘</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="allbg-box">
+		<img src="bg21.png">
+		<div class="allbg">
+			<div class="wordsbox">
+					<div class="zw">活动回顾</div>
+					<div class="inline"></div>
+					<div class="yw">ACTIVITY REVIEW</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="newsBox-upper hdhg-upper">
+			<div class="nebox comWidth">
+				<div class="weizhi" name="2017" id="2017"></div>
+				<a href="" class="data on" name="2017">2017</a>
+				<div class="search-box">
+					<form>
+						<input type="text" name="s" value="" autocomplete="off" placeholder="请输入关键字">
+						<input type="submit" id="" name="" value="">
+						<div class="clearfix"></div>
+					</form>	
+				</div>
+				<div class="clearfix"></div>
+			</div>
+	</div>
+	<div class="himgbox comWidth">
+		<ul class="himg">
+			<li>
+				<a href="">
+					<div class="ximg">
+						<img class="huoimg" src="huodong1.jpg">
+						<div class="bgco"></div>
+						<div class="htime">2017-05-01</div>
+					</div>
+					<div class="htit">众帮活动回顾</div>
+					<div class="hnei">众帮新能源充电站设计团队有建筑、工程、电力、IT、运营等多学科方面人才，拥有丰富的充电站规划设计经验。</div>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<div class="ximg">
+						<img class="huoimg" src="huodong2.jpg">
+						<div class="bgco"></div>
+						<div class="htime">2017-05-01</div>
+					</div>
+				<div class="htit">众帮活动回顾</div>
+				<div class="hnei">根据政府办公区、城市公共建筑、市政公共停车场、城市公园休闲区、体育场馆公园、城市商业综合体、酒店、居民小…
+				</div>
+				</a>
+			</li>
+			<li class="huoimg" style="margin-right:0">
+				<a href="">
+					<div class="ximg">
+						<img class="huoimg" src="huodong3.jpg">
+						<div class="bgco"></div>
+						<div class="htime">2017-05-01</div>
+					</div>
+				<div class="htit">众帮活动回顾</div>
+				<div class="hnei">
+					目前已有城市商业综合体、酒店、企业办公区、体育场馆公园、城市公共建筑，市政公共停车场等多种方案的设计经验。
+				</div>
+				</a>
+			</li>
+			<div class="clearfix"></div>
+		</ul>
+	</div>
+	<ul class="fenye comWidth" style="margin-bottom:120px;">
+		<li class="prev"><a>&nbsp;</a></li>
+  		<li class="active"><a>1</a></li>
+        <li class="next"><a>&nbsp;</a></li>
+        <div class="clearfix"></div>
+	</ul>
+	<div class="footer">
+		<div class="footer1">
+			<div class="comWidth">
+				<ul class="left">
+					<li class="li1">
+						<a href="" class="a1">关于我们</a>
+						<div class="line"></div>
+						<ul>
+						
+							<li>
+								<a href="">公司简介</a>
+							</li>
+							
+							<li>
+								<a href="">团队介绍</a>
+							</li>
+							
+							<li>
+								<a href="">企业文化</a>
+							</li>
+							
+						</ul>
+					</li>
+					<li class="li1">
+						<a href="" class="a1">产品和服务</a>
+						<div class="line"></div>
+						<ul>
+							<li>
+								<a href="">充电桩</a>
+							</li>
+								
+							<li>
+								<a href="">充电站规划设计</a>
+							</li>
+									
+							<li>
+								<a href="">充电站运营管理</a>
+							</li>
+									
+							<li>
+								<a href="">充电站工程建设</a>
+							</li>
+									
+							<li>
+								<a href="">充电设施维护</a>
+							</li>
+							
+							<li>
+								<a href="">服务网点</a>
+							</li>
+						</ul>
+					</li>
+					<li class="li1">
+						<a href="" class="a1">商务合作</a>
+						<div class="line"></div>
+						<ul>
+						
+							<li>
+								<a href="">新能源车租赁/销售</a>
+							</li>
+							
+							<li>
+								<a href="">充电桩建设维护</a>
+							</li>
+							
+							<li>
+								<a href="">充电桩安装技能培训</a>
+							</li>
+							
+							<li>
+								<a href="">绿色出行活动策划</a>
+							</li>
+							
+							<li>
+								<a href="">商户联盟合作</a>
+							</li>
+							
+							<li>
+								<a href="">东莞充电站地图</a>
+							</li>
+							
+						</ul>
+					</li>
+					<li class="li1">
+						<a href="vipz.html" class="a1">企业会员</a>
+						<div class="line"></div>
+						<ul>
+							<li><a href="vipz.html" class="a2">会员注册</a></li>
+							<li><a href="login.html" class="a2">会员登录</a></li>
+							<li><a href="" class="a2" style="display:none">会员中心</a></li>
+							 
+								<li><a href="huodong.html" class="a2">活动回顾</a></li>
+							
+								<li><a href="fuwu.html" class="a2">服务支持</a></li>
+							
+						</ul>
+					</li>
+					<li class="li1">
+						<a href="" class="a1">新闻资讯</a>
+						<div class="line"></div>
+						<ul>
+						
+							<li>
+								<a href="">公司新闻</a>
+							</li>
+							
+							<li>
+								<a href="">政策法规</a>
+							</li>
+							
+							<li>
+								<a href="">行业资讯</a>
+							</li>
+							
+							<li>
+								<a href="">视频中心</a>
+							</li>
+							
+						</ul>
+					</li>
+					<li class="li1" style="margin-right:0" >
+						<a href="" class="a1">联系我们</a>
+						<div class="line"></div>
+						<ul>
+							<li>
+								<a href="">联系方式</a>
+							</li>
+							<li>
+								<a href="">在线留言</a>
+							</li>
+							<li>
+								<a href="">人才招聘</a>
+							</li>
+						</ul>
+					</li>
+					<div class="clearfix"></div>
+				</ul>
+
+				<div class="right">
+					<p style="text-align: right;">
+						<img src="url.png" title="1首页_41.jpg" alt="1首页_41.jpg">
+						<br>
+						<br>
+					</p>
+					<img src="tel.png" title="首页" alt="首页" style="white-space: normal;">
+					<span style="font-size: 22px; font-family: arial, helvetica, sans-serif;">400-900-3086</span>
+					<p style="text-align: right;font-size:12px;color:#939393;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;周一至周五 09:00-17:30</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="footer2">
+			<p style="padding-top:30px;text-align: center;">© 2017 广东众帮新能源产业发展有限公司 版权所有 粤ICP备000000号-2</p>
+			<p style="padding-bottom:30px;text-align: center;">技术支持：STARKAY</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="bb.js"></script>
+</body>
+</html>

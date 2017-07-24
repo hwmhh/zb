@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="aa.css">
+<script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="jquery.SuperSlide.2.1.1.js"></script>
+<style type="text/css">
+.zcBox{
+	background-image:url(back.png);
+	height:839px;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+	}
+.resginBox{
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    width: 346px;
+    height: 490px;
+    background-color: #fff;
+    margin-top: -285px;
+    margin-left: -213px;
+    padding: 40px 45px;
+}
+.zcBox .resginBox input[type="text"],.zcBox .resginBox input[type="password"]{
+	height: 60px;
+    border: 1px solid #eeecec;
+    width: 100%;
+    border-bottom: 0;
+    font-size: 14px;
+    color: #a9a9a9;
+    text-indent: 12px;
+}
+.zcBox .resginBox .inputBox input[type="text"]{
+	float: left;
+	width: 60%;
+}
+.zcBox .resginBox .inputBox .djs{
+	float: right;
+    width: 30%;
+    height: 58px;
+    line-height: 58px;
+    margin-top: 1px;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+}
+.zcBox .resginBox .inputBox2{
+	margin-bottom: 27px;
+    margin-top: 10px;
+    line-height: 13px;
+    height: 13px;
+    color: #a9a9a9;
+    font-size:12px;
+}
+.zcBox .resginBox .inputBox2 a{
+	color: #046aa8;
+}
+.zcBox .resginBox .active{
+	background-color: #8cc227;
+	color: #fff;
+}
+.zcBox .resginBox .zhuce{
+	display: block;
+	width: 323px;
+	height: 56px;
+	text-align: center;
+	line-height: 56px;
+	cursor: pointer;
+	border: 1px solid #8cc227;
+	border-radius:3px;
+}
+</style>
+	<title>会员注册</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+</head>
+<body>
+	<div class="header">
+		<div class="logo comWidth">
+			<a href="#" class="logo">
+				<img src="logo.png">
+			</a>
+			<ul id="nav" class="nav">
+				<li class="nLi">
+					<a href="index.html" class="a1">首页</a>
+				</li>
+				<li class="nLi">
+					<a href="" class="a1">关于我们</a>
+					<ul class="sub" style="display:none;">
+						<li>
+							<a href="#" class="a2">公司简介</a>
+						</li>
+						<li>
+							<a href="#" class="a2">团队介绍</a>
+						</li>
+						<li>
+							<a href="#" class="a2">企业文化</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nLi">
+					<a href="fuwu.html" class="a1">产品和服务</a>
+					<ul class="sub" style="display:none;">
+						<li>
+							<a href="" class="a2">充电桩</a>
+						</li>
+						<li>
+							<a href="" class="a2">充电站规划设计</a>
+						</li>
+						<li>
+							<a href="" class="a2">充电站运营管理</a>
+						</li>
+						<li>
+							<a href="" class="a2">充电站工程建设</a>
+						</li>
+						<li>
+							<a href="" class="a2">充电设施维护</a>
+						</li>
+						<li>
+							<a href="" class="a2">服务网点</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nLi">
+					<a href="" class="a1">商务合作</a>
+					<ul class="sub" style="display:none;">
+						<li>
+							<a href="" class="a2">新能源车里租赁/销售</a>
+						</li>
+						<li>
+							<a href="" class="a2">充电桩建设维护</a>
+						</li>
+						<li>
+							<a href="" class="a2">充电桩安装技能培训</a>
+						</li>
+						<li>
+							<a href="" class="a2">绿色出行活动策划</a>
+						</li>
+						<li>
+							<a href="" class="a2">商户联盟合作</a>
+						</li>
+						<li>
+							<a href="" class="a2">东莞充电站地图</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nLi">
+					<a href="" class="a1">企业会员</a>
+					<ul class="sub" style="display:none;">
+						<li>
+							<a href="vipz.html" class="a2">会员注册</a>
+						</li>
+						<li>
+							<a href="login.html" class="a2">会员登录</a>
+						</li>
+						<li>
+							<a href="huodong.html" class="a2">活动回顾</a>
+						</li>
+						<li>
+							<a href="fuwu.html" class="a2">服务支持</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nLi">
+					<a href="" class="a1">新闻资讯</a>
+					<ul class="sub" style="display:none;">
+						<li>
+							<a href="" class="a2">公司新闻</a>
+						</li>
+						<li>
+							<a href="" class="a2">政策法规</a>
+						</li>
+						<li>
+							<a href="" class="a2">行业资讯</a>
+						</li>
+						<li>
+							<a href="" class="a2">视频中心</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nLi">
+					<a href="" class="a1">联系我们</a>
+					<ul class="sub" style="display:none;">
+						<li>
+							<a href="" class="a2">联系方式</a>
+						</li>
+						<li>
+							<a href="" class="a2">在线留言</a>
+						</li>
+						<li>
+							<a href="" class="a2">人才招聘</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="zcBox">
+		<div class="resginBox">
+			<form>
+				<p style="font-size:22px;margin-bottom: 30px;">注册账号</p>
+				<input type="text" class="txtName" id="reTel" placeholder="手机号" style="border-bottom:1px solid #eeecec">
+				<div class="inputBox">
+					<input type="text" id="txtNum" placeholder="验证码" style="border-top:0">
+					<input type="button" id="getYzm" value="获取验证码" onclick="" class="djs">
+					<div class="clearfix"></div>
+				</div>
+				<input type="password" class="txtName" id="pw1" placeholder="密码">
+				<input type="password" class="txtName" id="pw2" placeholder="确认密码" style="border-bottom:1px solid #eeecec">
+				<div class="inputBox2">
+					<input name="true" type="checkbox" id="registerCheck" class="check">
+					阅读并同意<a href="javascript:void(0)" id="zhuce">《众帮用户协议》</a>
+				</div>
+				<a class="zhuce active" onclick="registersend(this)">立即注册</a>
+				<a href="login.html" class="zhuce" title="">立即登录</a>
+			</form>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer1">
+			<div class="comWidth">
+				<ul class="left">
+					<li class="li1">
+						<a href="" class="a1">关于我们</a>
+						<div class="line"></div>
+						<ul>
+						
+							<li>
+								<a href="">公司简介</a>
+							</li>
+							
+							<li>
+								<a href="">团队介绍</a>
+							</li>
+							
+							<li>
+								<a href="">企业文化</a>
+							</li>
+							
+						</ul>
+					</li>
+					<li class="li1">
+						<a href="" class="a1">产品和服务</a>
+						<div class="line"></div>
+						<ul>
+							<li>
+								<a href="">充电桩</a>
+							</li>
+								
+							<li>
+								<a href="">充电站规划设计</a>
+							</li>
+									
+							<li>
+								<a href="">充电站运营管理</a>
+							</li>
+									
+							<li>
+								<a href="">充电站工程建设</a>
+							</li>
+									
+							<li>
+								<a href="">充电设施维护</a>
+							</li>
+							
+							<li>
+								<a href="">服务网点</a>
+							</li>
+						</ul>
+					</li>
+					<li class="li1">
+						<a href="" class="a1">商务合作</a>
+						<div class="line"></div>
+						<ul>
+						
+							<li>
+								<a href="">新能源车租赁/销售</a>
+							</li>
+							
+							<li>
+								<a href="">充电桩建设维护</a>
+							</li>
+							
+							<li>
+								<a href="">充电桩安装技能培训</a>
+							</li>
+							
+							<li>
+								<a href="">绿色出行活动策划</a>
+							</li>
+							
+							<li>
+								<a href="">商户联盟合作</a>
+							</li>
+							
+							<li>
+								<a href="">东莞充电站地图</a>
+							</li>
+							
+						</ul>
+					</li>
+					<li class="li1">
+						<a href="vipz.html" class="a1">企业会员</a>
+						<div class="line"></div>
+						<ul>
+							<li><a href="vipz.html" class="a2">会员注册</a></li>
+							<li><a href="login.html" class="a2">会员登录</a></li>
+							<li><a href="" class="a2" style="display:none">会员中心</a></li>
+							 
+								<li><a href="huodong.html" class="a2">活动回顾</a></li>
+							
+								<li><a href="fuwu.html" class="a2">服务支持</a></li>
+							
+						</ul>
+					</li>
+					<li class="li1">
+						<a href="" class="a1">新闻资讯</a>
+						<div class="line"></div>
+						<ul>
+						
+							<li>
+								<a href="">公司新闻</a>
+							</li>
+							
+							<li>
+								<a href="">政策法规</a>
+							</li>
+							
+							<li>
+								<a href="">行业资讯</a>
+							</li>
+							
+							<li>
+								<a href="">视频中心</a>
+							</li>
+							
+						</ul>
+					</li>
+					<li class="li1" style="margin-right:0" >
+						<a href="" class="a1">联系我们</a>
+						<div class="line"></div>
+						<ul>
+							<li>
+								<a href="">联系方式</a>
+							</li>
+							<li>
+								<a href="">在线留言</a>
+							</li>
+							<li>
+								<a href="">人才招聘</a>
+							</li>
+						</ul>
+					</li>
+					<div class="clearfix"></div>
+				</ul>
+
+				<div class="right">
+					<p style="text-align: right;">
+						<img src="url.png" title="1首页_41.jpg" alt="1首页_41.jpg">
+						<br>
+						<br>
+					</p>
+					<img src="tel.png" title="首页" alt="首页" style="white-space: normal;">
+					<span style="font-size: 22px; font-family: arial, helvetica, sans-serif;">400-900-3086</span>
+					<p style="text-align: right;font-size:12px;color:#939393;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;周一至周五 09:00-17:30</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="footer2">
+			<p style="padding-top:30px;text-align: center;">© 2017 广东众帮新能源产业发展有限公司 版权所有 粤ICP备000000号-2</p>
+			<p style="padding-bottom:30px;text-align: center;">技术支持：STARKAY</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="bb.js"></script>
+</body>
+</html>

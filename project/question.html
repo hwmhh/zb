@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="aa.css">
+<script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="jquery.SuperSlide.2.1.1.js"></script>
+<style type="text/css">
+body{
+	background-color: #fff;
+}
+.header{
+
+}
+.allbg-box{
+	position: relative;
+    padding-top: 82px;
+    max-height: 500px;
+    overflow: hidden;
+}
+.allbg-box .allbg{
+	background-image: url(fuwu.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.allbg-box img {
+    width: 100%;
+}
+.allbg-box .allbg .wordsbox{
+	position: absolute;
+    top: 50%;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 116px;
+    margin-top: -30px;
+    overflow: hidden
+}
+.yw{
+	color: #fff;
+	font-size: 24px;
+}
+.zw{
+	font-size: 42px;
+}
+.newsBox-upper {
+    background-color: #f5f5f5;
+    height: 149px;
+    border-bottom: 1px solid #cacaca;
+}
+.newsBox-upper .zibox {
+    position: relative;
+}
+.newsBox-upper .zibox a {
+    display: block;
+}
+.newsBox-upper .zibox .active {
+    border-color: #84c225;
+    background-color: #84c225;
+    color: #fff;
+}
+.newsBox-upper .zibox .link {
+    float: left;
+    width: 138px;
+    height: 43px;
+    border: 1px solid #b3b3b3;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    line-height: 45px;
+    margin-right: 10px;
+    margin-top: 52px;
+}
+.newsBox-upper .zibox a:hover{
+	background-color: #84c225;
+}
+.shBox{
+	margin-top: 50px;
+}
+.sti{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 6em;
+}
+.tnei{
+	font-size: 14px;
+	line-height: 2em;
+}
+.fenye{
+	margin-left: 600px;
+    margin-top: 65px;
+    margin-bottom: 130px;
+}
+.fenye .prev {
+	background: url(icon10.png) no-repeat;
+	width: 58px;
+	height: 30px;
+	cursor: pointer;
+}
+.fenye .next {
+	background: url(icon11.png) no-repeat;
+	width: 58px;
+	height: 30px;
+	cursor: pointer;
+}
+.fenye .active a {
+    color: #0067ac;
+    border-bottom: 2px solid #0067ac;
+}
+.fenye li{
+	display: inline-block;
+    width: 24px;
+    height: 30px;
+    text-align: center;
+    line-height: 28px;
+}
+</style>
+	<title>常见问题</title>
+</head>
+<body>
+	<div class="header">
+		<div class="logo comWidth">
+			<a href="#" class="logo">
+				<img src="logo.png">
+			</a>
+			<ul id="nav" class="nav">
+				<li class="nLi">
+					<a href="index.html" class="a1">首页</a>
+				</li>
+				<li class="nLi">
+					<a href="" class="a1">关于我们</a>
+					<ul class="sub" style="display:none;">
+						<li>
+							<a href="#" class="a2">公司简介</a>
+						</li>
+						<li>
+							<a href="#" class="a2">团队介绍</a>
+						</li>
+						<li>
+							<a href="#" class="a2">企业文化</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nLi">
+					<a href="" class="a1">产品和服务</a>
+					<ul class="sub" style="display:none;">
+						<li>
+							<a href="" class="a2">充电桩</a>
+						</li>
+						<li>
+							<a href="" class="a2">充电站规划设计</a>
+						</li>
+						<li>
+							<a href="" class="a2">充电站运营管理</a>
+						</li>
+						<li>
+							<a href="" class="a2">充电站工程建设</a>
+						</li>
+						<li>
+							<a href="" class="a2">充电设施维护</a>
+						</li>
+						<li>
+							<a href="" class="a2">服务网点</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nLi">
+					<a href="" class="a1">商务合作</a>
+					<ul class="sub" style="display:none;">
+						<li>
+							<a href="" class="a2">新能源车里租赁/销售</a>
+						</li>
+						<li>
+							<a href="" class="a2">充电桩建设维护</a>
+						</li>
+						<li>
+							<a href="" class="a2">充电桩安装技能培训</a>
+						</li>
+						<li>
+							<a href="" class="a2">绿色出行活动策划</a>
+						</li>
+						<li>
+							<a href="" class="a2">商户联盟合作</a>
+						</li>
+						<li>
+							<a href="" class="a2">东莞充电站地图</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nLi">
+					<a href="" class="a1">企业会员</a>
+					<ul class="sub" style="display:none;">
+						<li>
+							<a href="vipz.html" class="a2">会员注册</a>
+						</li>
+						<li>
+							<a href="login.html" class="a2">会员登录</a>
+						</li>
+						<li>
+							<a href="huodong.html" class="a2">活动回顾</a>
+						</li>
+						<li>
+							<a href="fuwu.html" class="a2">服务支持</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nLi">
+					<a href="" class="a1">新闻资讯</a>
+					<ul class="sub" style="display:none;">
+						<li>
+							<a href="" class="a2">公司新闻</a>
+						</li>
+						<li>
+							<a href="" class="a2">政策法规</a>
+						</li>
+						<li>
+							<a href="" class="a2">行业资讯</a>
+						</li>
+						<li>
+							<a href="" class="a2">视频中心</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nLi">
+					<a href="" class="a1">联系我们</a>
+					<ul class="sub" style="display:none;">
+						<li>
+							<a href="" class="a2">联系方式</a>
+						</li>
+						<li>
+							<a href="" class="a2">在线留言</a>
+						</li>
+						<li>
+							<a href="" class="a2">人才招聘</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="allbg-box">
+		<img src="bg21.png">
+		<div class="allbg">
+			<div class="wordsbox">
+					<div class="zw">服务支持</div>
+					<div class="inline"></div>
+					<div class="yw">SERVICE SUPPORT</div>
+			</div>
+		</div>
+	</div>
+	<div class="newsBox-upper">
+		<div class="zibox comWidth">
+			<a href="fuwu.html" class=" link">资料库</a>
+			<a href="rujian.html" class=" link">软件下载</a>
+			<a href="shuhou.html" class=" link">售后政策</a>
+			<a href="question.html" class="active link">常见问题</a>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	<div class="shBox comWidth">
+		<div class="sti">1、“安装充电桩需要协调多方吗”</div>
+		<div class="tnei">
+			充电桩不是以为在地面打几个孔固定充电桩，再拉一个电线就可以的，实际上面，协调的工作量相当大，主要有四个部门的，使用者自己、汽车企业、电力公司和物业产权方。申请方面直接像你所在市的店里公司申请，然后转给供电局，之后就会技术工程师看现场，提供施工方案，如果你是在小区安装，还需要取的开发商的同意。
+		</div>
+		<div class="sti">2、“380伏电压会触电吗”</div>
+		<div class="tnei">
+			因为充电桩的充电电压是380伏、电流为36安培比居民用电的电压高、电流强，所以需要物业管理公司和消防部门协调，因为很多朋友只有听过电动汽车，对于其并不真正的了解，而对于连接充电桩的电缆采取高处走线，所以需要消防部门出具的安全说明。
+		</div>
+		<div class="sti">3、“个人还需要自付安装费吗”</div>
+		<div class="tnei">
+			充电桩需要配电室重新基础配电，因为每个小区的用电负荷在安装前都是计算好的，如果小区内使用100伏电压的话，只给你配120伏的电开关。所以充电桩380伏的高电压必须单独走电，即另外布设一个开关，这部分涉及费用8000多元，由我们自己承担。然后，电力公司把电线从开关处拉到充电桩大概200米，这个施工费用包括充电桩的硬件设施成本都是电力公司承担，大概6万多元，这其中国家对电力公司有相应的贴补政策。同时还需要支付物业费用的。
+		</div>
+		<div class="sti">4、“施工难度大吗”</div>
+		<div class="tnei">
+			施工过程中，我们要协调安装配电柜的空间，并请车主们挪开车辆方便施工。连接充电桩的电缆比小孩子的胳膊粗，每个充电桩的电流为36安培，4个就是144安培，今后还会增加充电桩的数量，没有这么粗的电缆无法承受更大电流。电缆并不是铺设在地面上，而是从空中架过来的，因为地下停车场进进出出的车辆很多，铺设在地面上，一旦电缆被压坏后果不堪设想，从空中架过来，工作量大了很多，但为了安全起见还是值得。为了从空中架电缆，4位工人师傅花了4天时间把以前布置的电线槽重新剥开，铺设电缆。
+		</div>
+		<div class="sti">5 、“每度电多少钱”</div>
+		<div class="tnei">
+			电费是按照商业用电算，我们小区是按照平均每度电1.26元计算，但有的小区电表能够自动计算哪个时段的电价便宜自动调节充电时间，这样会更省钱。
+		</div>
+		<div class="sti">6、“建一个充电桩要多少钱？”</div>
+		<div class="tnei">
+			据悉，不考虑土地费用，建设为50辆电动公交车提供更换电池服务的电池租赁站（不含电池）总投资达3000万~4000万元；在已有停车场的基础上建设为30辆电动公交车充电的站点总投资额为1000万元；建设拥有9个充电车位的商业化充电站总投资额至少500万元；一个路边充电桩的投资额至少为2.5万元。单个充电桩的价格从两千多元到万元价格不等，自用充电桩分为两种，一种是“壁挂”式，一种是“埋地”式。埋地式的充电桩，只需要打地基、埋线、通电就可以使用，整个流程可以控制在一两个小时之内。至于壁挂式充电桩的安装就更快了。从充电方式上分，充电桩有直流充电桩和交流充电桩。
+			对于私人车主而言，安装充电桩首要条件就是要有自己的私人车位，专家表示，地下车位安装充电桩相对好些。地下车位附近一般都能找到电源，将电引到车位相对简单，空中走线也不会妨碍别人。而且，地下车库行人相对较少。
+		</div>
+		<div class="sti">7、“充电桩是否安全呢？”</div>
+		<div class="tnei">
+			专家表示，充电桩的安全性能在技术上可以得到最大限度保证。在进行充电桩的安装时，会尽量将其打造成一个封闭的状态，只有充电桩的使用者才能打开充电接口，有效防范漏电事故。
+		</div>
+		<div class="sti">8、“装充电桩需要多长时间呢？”</div>
+		<div class="tnei">
+			一般来说，如果所有条件都具备，比如物业、供电等部门都同意，安装方案又不是很复杂，三天即可完成安装。大致的流程是安装公司出具安装方案，得到供电部门的同意后，派人上门安装。一般情况下，一天即可装好充电桩,供电部门验收合格后，会给充电桩供电。
+		</div>
+		<div class="sti">9.“车库安装需注意哪些问题？”</div>
+		<div class="tnei">
+			对于有经验的安装者而言，在小区地下车库这种复杂环境下安装充电桩，首先会考量以下几项问题：充电区域的长度测量；距离停车位的位置测量，确保其他车辆能正常出入；明确配电箱位置，确认电源线的走线距离；明确地下车库是否有潮湿渗水；明确光线是否充足；测试地下车库的信号是否稳。然后，安装充电桩、提前规划插座距离。在安装充电桩前需确认充电桩的路数规格，以目前市面上销售较好的16路云易充智能充电站为例，每个插座需间隔80~100cm距离保证充电车辆的进出顺利。具体安装插座时可以提前做好标记，依插座的距离设置不同的充电线长度。第三，由专业电工连接电源线。连接最终电源线时，需要由持电工证的专业人员进行操作，在此之前需保证充电桩已正确连接零火线、地线，设备外加装有空气开关。确认安全无误后，再通电测试充电桩运行是否正常。最后，检查信号强度。由于地下车库无法和地上相提并论，所以最终需检测信号强度是否达到标准。
+		</div>
+		<div class="sti">10、“充电桩需要维护保养吗”</div>
+		<div class="tnei">
+			私人车主在使用充电桩方面也无需特别维护保养，只需定期请充电桩安装公司检查就可以了
+		</div>
+
+	</div>
+	<ul class="fenye comWidth" style="margin-bottom:120px;">
+		<li class="prev"><a>&nbsp;</a></li>
+  		<li class="active"><a>1</a></li>
+        <li class="next"><a>&nbsp;</a></li>
+        <div class="clearfix"></div>
+	</ul>
+	<div class="footer">
+		<div class="footer1">
+			<div class="comWidth">
+				<ul class="left">
+					<li class="li1">
+						<a href="" class="a1">关于我们</a>
+						<div class="line"></div>
+						<ul>
+						
+							<li>
+								<a href="">公司简介</a>
+							</li>
+							
+							<li>
+								<a href="">团队介绍</a>
+							</li>
+							
+							<li>
+								<a href="">企业文化</a>
+							</li>
+							
+						</ul>
+					</li>
+					<li class="li1">
+						<a href="" class="a1">产品和服务</a>
+						<div class="line"></div>
+						<ul>
+							<li>
+								<a href="">充电桩</a>
+							</li>
+								
+							<li>
+								<a href="">充电站规划设计</a>
+							</li>
+									
+							<li>
+								<a href="">充电站运营管理</a>
+							</li>
+									
+							<li>
+								<a href="">充电站工程建设</a>
+							</li>
+									
+							<li>
+								<a href="">充电设施维护</a>
+							</li>
+							
+							<li>
+								<a href="">服务网点</a>
+							</li>
+						</ul>
+					</li>
+					<li class="li1">
+						<a href="" class="a1">商务合作</a>
+						<div class="line"></div>
+						<ul>
+						
+							<li>
+								<a href="">新能源车租赁/销售</a>
+							</li>
+							
+							<li>
+								<a href="">充电桩建设维护</a>
+							</li>
+							
+							<li>
+								<a href="">充电桩安装技能培训</a>
+							</li>
+							
+							<li>
+								<a href="">绿色出行活动策划</a>
+							</li>
+							
+							<li>
+								<a href="">商户联盟合作</a>
+							</li>
+							
+							<li>
+								<a href="">东莞充电站地图</a>
+							</li>
+							
+						</ul>
+					</li>
+					<li class="li1">
+						<a href="vipz.html" class="a1">企业会员</a>
+						<div class="line"></div>
+						<ul>
+							<li><a href="vipz.html" class="a2">会员注册</a></li>
+							<li><a href="login.html" class="a2">会员登录</a></li>
+							<li><a href="" class="a2" style="display:none">会员中心</a></li>
+							 
+								<li><a href="huodong.html" class="a2">活动回顾</a></li>
+							
+								<li><a href="fuwu.html" class="a2">服务支持</a></li>
+							
+						</ul>
+					</li>
+					<li class="li1">
+						<a href="" class="a1">新闻资讯</a>
+						<div class="line"></div>
+						<ul>
+						
+							<li>
+								<a href="l">公司新闻</a>
+							</li>
+							
+							<li>
+								<a href="">政策法规</a>
+							</li>
+							
+							<li>
+								<a href="">行业资讯</a>
+							</li>
+							
+							<li>
+								<a href="">视频中心</a>
+							</li>
+							
+						</ul>
+					</li>
+					<li class="li1" style="margin-right:0" >
+						<a href="" class="a1">联系我们</a>
+						<div class="line"></div>
+						<ul>
+							<li>
+								<a href="">联系方式</a>
+							</li>
+							<li>
+								<a href="">在线留言</a>
+							</li>
+							<li>
+								<a href="">人才招聘</a>
+							</li>
+						</ul>
+					</li>
+					<div class="clearfix"></div>
+				</ul>
+
+				<div class="right">
+					<p style="text-align: right;">
+						<img src="url.png" title="1首页_41.jpg" alt="1首页_41.jpg">
+						<br>
+						<br>
+					</p>
+					<img src="tel.png" title="首页" alt="首页" style="white-space: normal;">
+					<span style="font-size: 22px; font-family: arial, helvetica, sans-serif;">400-900-3086</span>
+					<p style="text-align: right;font-size:12px;color:#939393;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;周一至周五 09:00-17:30</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="footer2">
+			<p style="padding-top:30px;text-align: center;">© 2017 广东众帮新能源产业发展有限公司 版权所有 粤ICP备000000号-2</p>
+			<p style="padding-bottom:30px;text-align: center;">技术支持：STARKAY</p>
+		</div>
+	</div>
+	<script type="text/javascript" src="bb.js"></script>
+</body>
+</html>
